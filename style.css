@@ -1,0 +1,178 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.loginBox{
+    width: 25%;
+    height: 100vh;
+    background-color: #00014a;
+    position: absolute;
+    z-index: 1;
+}
+
+.loginInfos{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.loginBox h1{
+    margin-left: 10px;
+    color: #e6e6e6;
+}
+
+.loginBox h1, .loginInfos p{
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+input{
+    padding: 10px;
+    border: none;
+    margin-top: 10%;
+    border-radius: 60px;
+    text-align: center  ;
+}
+
+input:hover{
+    padding: 12px;
+    border: #281f6f 5px solid;
+    box-shadow: 0 0 70px #3626af;
+
+}
+
+.loginInfos p{
+    color: #ffffff;
+    margin-top: 5%;
+    font-size: 0.8rem;
+}
+
+.loginInfos a{
+    text-decoration: none;
+}
+
+#loginButton{
+    margin-top: 10%;
+    border: #281f6f 5px solid;
+    background: none;
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#loginButton:hover{
+    padding: 15px;
+    transition: ease-in 0.5s;
+    box-shadow: 0 0 70px #3626af;
+
+}
+
+.container{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background-image: linear-gradient(to right, #00014a, #281f6f);
+}
+
+.layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.layer:nth-child(1){
+    background-image: url(./img/1.png);
+}
+.layer:nth-child(2){
+    background-image: url(./img/2.png);
+}
+.layer:nth-child(3){
+    background-image: url(./img/3.png);
+}
+.layer:nth-child(4){
+    background-image: url(./img/4.png);
+}
+.layer:nth-child(5){
+    background-image: url(./img/5.png);
+}
+.layer:nth-child(6){
+    background-image: url(./img/6.png);
+}
+.layer:nth-child(7){
+    background-image: url(./img/7.png);
+}
+
+.cadastroBox{
+    width: 25%;
+    position: absolute; 
+    z-index: 1; 
+    height: 100vh;
+    background-color: #00014a;
+    display: none;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadBox{
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cadBox p, .cadBox h1{
+    margin-top: 10px;
+    color: #ffffff;
+    font-family: 'Libre Franklin', sans-serif;
+}
+
+#confirm, #cancel{
+    margin-top: 10%;
+    border: #281f6f 5px solid;
+    background: none;
+    color: #ffffff;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#confirm:hover, #cancel:hover{
+    padding: 15px;
+    transition: ease-in 0.5s;
+    box-shadow: 0 0 70px #3626af;
+}
+
+#confirm:hover{
+    background-color: green;
+}
+
+#cancel:hover{
+    background-color: red;
+}
+
+
+@media (max-width: 925px){
+    .container{
+        display: none;
+    }
+
+    .loginBox, .cadastroBox{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100vh;
+    }
+
+
+}
